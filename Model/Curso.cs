@@ -11,9 +11,7 @@ namespace Escola.Model
         public string Nome {get;set;}
         public string Area {get;set;}
         public int Duracao { get; set; }
-        public List<Disciplina> disciplinas{get;set;}
-        public Curso(){
-            disciplinas = new List<Disciplina>();    
-        }
+        public List<Disciplina> Disciplinas {get;set;}
+        public List<Aluno> Alunos {get; set;}
     }
 }

@@ -1,5 +1,14 @@
+using Microsoft.EntityFrameworkCore;
+using Escola.data;
+
 var builder = WebApplication.CreateBuilder(args);
 
+var connectionStringMysql = builder.Configuration.GetConnectionString("ConnectionMysql");
+builder.Services.AddDbContext<EscolaDbContext>(options => options.UseMySql(
+    connectionStringMysql,
+    ServerVersion.AutoDetect(connectionStringMysql)
+    )
+);
 // Add services to the container.
 
 builder.Services.AddControllers();

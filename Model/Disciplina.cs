@@ -11,5 +11,9 @@ namespace Escola.Model
         public string? Nome {get;set;}
         public int CargaHoraria{get;set;}
         public int Semestre { get; set; }
+        public int CursoId {get; set;}
+        public Curso Curso {get; set;}
     }
+
 }
+
