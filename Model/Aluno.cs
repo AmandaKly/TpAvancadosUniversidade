@@ -12,7 +12,6 @@ namespace Escola.Model
         public DateTime DataNascimento { get; set; }
         public string Cpf { get; set; }
         public int CursoId {get; set;}
-
         public Curso Curso {get; set;}
     }
 }
