@@ -12,7 +12,7 @@ namespace Escola.Model
         public int CargaHoraria{get;set;}
         public int Semestre { get; set; }
         public int CursoId {get; set;}
-        public Curso Curso {get; set;}
+        public Curso? Curso {get; set;}
     }
 
 }
