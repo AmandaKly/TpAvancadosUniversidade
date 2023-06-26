@@ -3,7 +3,7 @@ using Escola.data;
 
 var builder = WebApplication.CreateBuilder(args);
 
-var connectionStringMysql = builder.Configuration.GetConnectionString("Azure");
+var connectionStringMysql = builder.Configuration.GetConnectionString("ConnectionMysql");
 builder.Services.AddDbContext<EscolaDbContext>(options => options.UseMySql(
     connectionStringMysql,
     ServerVersion.AutoDetect(connectionStringMysql)
